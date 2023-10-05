@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+}
+ 
+header{
+    text-align: center;
+    color: blanchedalmond; 
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: rgb(211, 138, 49)
+}
+
+.option{
+    font-size: medium;
+    font-weight: 300;
+    color: white;
+    text-decoration:none;
+    border: 2px solid white;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.option:hover{
+    opacity: 60%;
+}
+
+h1{
+    background-color: blanchedalmond;
+    text-align: center;
+    color: black;
+    font-family: monserrat;
+}
+
+p{
+    color:black;
+    font-size: larger;
+    background-color: blanchedalmond;
+    font-family:oblique;
+    text-align: center;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotov{
+    width: 70%;
+    object-fit: contain;
+}
+
+#conteiner-fotos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+}
+
+.tarjeta-foto{
+    border: 3px;
+    border:3px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+/* Lo de abajo (hover) es para ver efectos al pasar el mouse (CNTRL K+C)
+descomentar: (CNTRL K+U)*/
+.foto:hover{
+    opacity: 50%;
+    width: 250px;
+    height: 250px;
+    transition: opacity 5s;
+    transition: width 1s;
+}
