@@ -7,6 +7,6 @@ botton.addEventListener("click",()=>{
         body.style.backgroundColor = "black";
     }else{
         modoOscuro = false;
-        body.style.backgroundColor = "blanchedalmond"
+        body.style.backgroundColor = "white"
     }
 })

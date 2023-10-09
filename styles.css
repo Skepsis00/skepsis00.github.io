@@ -1,5 +1,6 @@
 *{
-    margin: 0%;
+    margin: 0px;
+    padding: 0px;
 }
  
 header{
@@ -7,7 +8,7 @@ header{
     color: blanchedalmond; 
     font-weight: bolder;
     font-size: xx-large;
-    background-color: rgb(211, 138, 49)
+    background-color: rgb(211, 138, 49);
 }
 
 .option{
@@ -24,19 +25,45 @@ header{
     opacity: 60%;
 }
 
-h1{
-    background-color: blanchedalmond;
-    text-align: center;
-    color: black;
-    font-family: monserrat;
+.home{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-p{
-    color:black;
-    font-size: larger;
-    background-color: blanchedalmond;
-    font-family:oblique;
+.in-flex{
+    flex: 1;
+    min-width: 250px;
     text-align: center;
+}
+
+.in-flex:first-child {
+    flex: 2;
+    padding: 25px;
+    background-color:antiquewhite;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.in-flex div {
+    padding: 25px;
+    background-color: antiquewhite;
+    margin: 20px;
+}
+
+
+h1{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(211, 138, 49);
+    font-family: italic;
+}
+
+h2{
+    color:rgb(213, 116, 47);
+    font-size: x-large;
+    text-align: center;
+    font-style: arial;
+
 }
 
 main{
@@ -48,14 +75,14 @@ main{
 }
 
 .fotov{
-    width: 70%;
-    object-fit: contain;
+    width: 450px;
 }
 
 #conteiner-fotos{
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
 
 .foto{
@@ -64,8 +91,8 @@ main{
 }
 
 .tarjeta-foto{
-    border: 3px;
-    border:3px solid black;
+    border: 2px solid whitesmoke;
+    color: rgb(211, 138, 49);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -73,9 +100,9 @@ main{
 /* Lo de abajo (hover) es para ver efectos al pasar el mouse (CNTRL K+C)
 descomentar: (CNTRL K+U)*/
 .foto:hover{
-    opacity: 50%;
-    width: 250px;
-    height: 250px;
+   
+    width: 300px;
+    height: 300px;
     transition: opacity 5s;
     transition: width 1s;
 }
